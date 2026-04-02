@@ -1,11 +1,3 @@
-/**
- * Ultimate Music Bot - 
- * 
- * @fileoverview 
- * @module ConfigurationManager
- * @version 1.0.0
- * @author GlaceYT
- */
 
 const EnvironmentVariableProcessor = require('process').env;
 
@@ -19,10 +11,10 @@ class EnterpriseConfigurationManager {
     constructPrimaryConfigurationSchema() {
         return {
             discord: {
-                token: EnvironmentVariableProcessor.TOKEN || ""
+                token: EnvironmentVariableProcessor.TOKEN || "MTIzODQ5ODAxNTEyNDEyNzc4NA.GMEVg7.QXsV4rV2PUUm-l_cPWMIgcfSv7-FrTb6nFF0XE"
             },
             mongodb: {
-                uri: EnvironmentVariableProcessor.MONGODB_URI || ""  
+                uri: EnvironmentVariableProcessor.MONGODB_URI || "mongodb+srv://shiva:shiva@musicbotyt.ouljywv.mongodb.net/?retryWrites=true&w=majority"  
             },
             
             /**
@@ -40,11 +32,11 @@ class EnterpriseConfigurationManager {
              * Customize your bot's appearance and basic behavior
              */
             bot: {
-                prefix: EnvironmentVariableProcessor.BOT_PREFIX || "!",  // 👈 prefix (!, ?, etc)
-                ownerIds: ["1004206704994566164"],      // 👈 ADD YOUR DISCORD ID HERE
+                prefix: EnvironmentVariableProcessor.BOT_PREFIX || "/",  // 👈 prefix (!, ?, etc)
+                ownerIds: ["882279843398570026"],      // 👈 ADD YOUR DISCORD ID HERE
                 embedColor: 0x00AE86,               // 👈 Bot embed color (hex)
-                supportServer: "https://discord.gg/xQF9f9yUEM",    // 👈 Your support server link
-                defaultStatus: "🎵 Ready for music!"         // 👈 Bot status message
+                supportServer: "https://discord.gg/kUk3Zd7w",    // 👈 Your support server link
+                defaultStatus: "Słucha wymagan"         // 👈 Bot status message
             },
             
             features: this.constructAdvancedFeatureConfiguration()
