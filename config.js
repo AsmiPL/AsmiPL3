@@ -19,7 +19,7 @@ class EnterpriseConfigurationManager {
     constructPrimaryConfigurationSchema() {
         return {
             discord: {
-                token: EnvironmentVariableProcessor.TOKEN || "MTIzODQ5ODAxNTEyNDEyNzc4NA.GpiGXp.krkRyX3r2pv0HP-I4zctNaBsszjq5TIgrT_be8"
+                token: EnvironmentVariableProcessor.TOKEN || ""
             },
             mongodb: {
                 uri: EnvironmentVariableProcessor.MONGODB_URI || "mongodb+srv://shiva:shiva@musicbotyt.ouljywv.mongodb.net/?retryWrites=true&w=majority"  
