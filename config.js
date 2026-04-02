@@ -1,3 +1,11 @@
+/**
+ * Ultimate Music Bot - 
+ * 
+ * @fileoverview 
+ * @module ConfigurationManager
+ * @version 1.0.0
+ * @author GlaceYT
+ */
 
 const EnvironmentVariableProcessor = require('process').env;
 
